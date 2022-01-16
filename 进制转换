@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+	char str[31];
+	int num[31];
+	int res[31];
+	
+	while(scanf("%s",str)!=EOF){//循环输入十进制数字 
+	
+		int size = strlen(str);//输入十进制数字长度
+		
+		for(int i=0;i<strlen(str);i++)//将十进制数字以字符串输入并转换为整型数组
+			num[i]=str[i]-'0';
+		
+		for(int j=0;j<size)
+		int temp=0;
+		int rem=0;//余数 
+		for(int i=0;i<size;i++){
+			if(temp==0){
+				rem=num[i];
+			}
+			else{
+				rem=10+num[i];
+			}
+			temp=rem%2;
+			num[i]=rem/2;
+		}
+		res[j]=rem;
+		 
+		
+			
+			
+				
+			
+		} 
+	}
+	return 0;
+	
+} 
